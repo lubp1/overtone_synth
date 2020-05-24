@@ -1,0 +1,12 @@
+#N canvas 1234 331 584 391 12;
+#X obj 45 119 *~ 0.6;
+#X obj 185 197 delread~ delay 200;
+#X obj 187 94 delwrite~ delay 500;
+#X obj 187 41 inlet~;
+#X obj 178 278 outlet~;
+#X obj 246 154 inlet;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 1 0 4 0;
+#X connect 3 0 2 0;
+#X connect 5 0 1 0;

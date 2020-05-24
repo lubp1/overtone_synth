@@ -1,0 +1,227 @@
+EESchema Schematic File Version 4
+LIBS:ex1-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A?
+U 1 1 5DAB4A1D
+P 5550 2800
+F 0 "A?" H 5550 1711 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 5550 1620 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 5700 1850 50  0001 L CNN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5550 1800 50  0001 C CNN
+	1    5550 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5DAB5F9A
+P 6700 2650
+F 0 "RV?" H 6631 2696 50  0000 R CNN
+F 1 "R_POT" H 6631 2605 50  0000 R CNN
+F 2 "" H 6700 2650 50  0001 C CNN
+F 3 "~" H 6700 2650 50  0001 C CNN
+	1    6700 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5DAB6501
+P 7300 2900
+F 0 "RV?" H 7231 2946 50  0000 R CNN
+F 1 "R_POT" H 7231 2855 50  0000 R CNN
+F 2 "" H 7300 2900 50  0001 C CNN
+F 3 "~" H 7300 2900 50  0001 C CNN
+	1    7300 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5DAB6BDB
+P 4150 2850
+F 0 "SW?" H 4150 3135 50  0000 C CNN
+F 1 "SW_Push" H 4150 3044 50  0000 C CNN
+F 2 "" H 4150 3050 50  0001 C CNN
+F 3 "~" H 4150 3050 50  0001 C CNN
+	1    4150 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5DAB702C
+P 4600 3050
+F 0 "SW?" H 4600 3335 50  0000 C CNN
+F 1 "SW_Push" H 4600 3244 50  0000 C CNN
+F 2 "" H 4600 3250 50  0001 C CNN
+F 3 "~" H 4600 3250 50  0001 C CNN
+	1    4600 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DAB732A
+P 4150 2200
+F 0 "R?" H 4220 2246 50  0000 L CNN
+F 1 "10k" H 4220 2155 50  0000 L CNN
+F 2 "" V 4080 2200 50  0001 C CNN
+F 3 "~" H 4150 2200 50  0001 C CNN
+	1    4150 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DAB762A
+P 4600 2200
+F 0 "R?" H 4670 2246 50  0000 L CNN
+F 1 "10k" H 4670 2155 50  0000 L CNN
+F 2 "" V 4530 2200 50  0001 C CNN
+F 3 "~" H 4600 2200 50  0001 C CNN
+	1    4600 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 1800 5750 1750
+Wire Wire Line
+	5750 1750 4600 1750
+Wire Wire Line
+	4150 1750 4150 2050
+Wire Wire Line
+	4600 2050 4600 1750
+Connection ~ 4600 1750
+Wire Wire Line
+	4600 1750 4150 1750
+Wire Wire Line
+	4150 2350 4150 2400
+Wire Wire Line
+	5050 2400 4150 2400
+Connection ~ 4150 2400
+Wire Wire Line
+	4150 2400 4150 2650
+Wire Wire Line
+	4600 2350 4600 2500
+Wire Wire Line
+	5050 2500 4600 2500
+Connection ~ 4600 2500
+Wire Wire Line
+	4600 2500 4600 2850
+Wire Wire Line
+	4150 3050 4150 4100
+Wire Wire Line
+	4150 4100 4600 4100
+Wire Wire Line
+	5550 4100 5550 3850
+Wire Wire Line
+	4600 3250 4600 4100
+Connection ~ 4600 4100
+Wire Wire Line
+	4600 4100 5550 4100
+Wire Wire Line
+	6700 1750 6700 2500
+Connection ~ 5750 1750
+Wire Wire Line
+	6700 1750 7300 1750
+Wire Wire Line
+	7300 1750 7300 2750
+Connection ~ 6700 1750
+Wire Wire Line
+	6700 2800 6700 4100
+Wire Wire Line
+	6700 4100 5550 4100
+Connection ~ 5550 4100
+Wire Wire Line
+	7300 3050 7300 3800
+Wire Wire Line
+	7300 4100 6700 4100
+Connection ~ 6700 4100
+Wire Wire Line
+	6550 2650 6050 2650
+Wire Wire Line
+	6050 2650 6050 2800
+Wire Wire Line
+	7150 2900 6050 2900
+Wire Wire Line
+	5750 1750 6700 1750
+$Comp
+L acel:Acelerometro U?
+U 1 1 5DAD8318
+P 8500 2600
+F 0 "U?" H 9078 2721 50  0000 L CNN
+F 1 "Acelerometro" H 9078 2630 50  0000 L CNN
+F 2 "" H 8500 2600 50  0001 C CNN
+F 3 "" H 8500 2600 50  0001 C CNN
+	1    8500 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 2200 8050 2200
+Wire Wire Line
+	7300 1750 8000 1750
+Wire Wire Line
+	8000 1750 8000 2200
+Connection ~ 7300 1750
+Wire Wire Line
+	8050 2300 7600 2300
+Wire Wire Line
+	7600 2300 7600 3800
+Wire Wire Line
+	7600 3800 7300 3800
+Connection ~ 7300 3800
+Wire Wire Line
+	7300 3800 7300 4100
+Wire Wire Line
+	8050 2500 7800 2500
+Wire Wire Line
+	7800 2500 7800 3200
+Wire Wire Line
+	7800 3200 6050 3200
+Wire Wire Line
+	8050 2400 7950 2400
+Wire Wire Line
+	7950 2400 7950 3300
+Wire Wire Line
+	7950 3300 6050 3300
+Wire Wire Line
+	5650 3850 5650 3800
+Wire Wire Line
+	5650 3850 5550 3850
+Connection ~ 5550 3850
+Wire Wire Line
+	5550 3850 5550 3800
+NoConn ~ 5450 1800
+NoConn ~ 5650 1800
+NoConn ~ 6050 2200
+NoConn ~ 6050 2300
+NoConn ~ 6050 2600
+NoConn ~ 6050 3000
+NoConn ~ 6050 3100
+NoConn ~ 6050 3400
+NoConn ~ 6050 3500
+NoConn ~ 5050 3500
+NoConn ~ 5050 3400
+NoConn ~ 5050 3300
+NoConn ~ 5050 3200
+NoConn ~ 5050 3100
+NoConn ~ 5050 3000
+NoConn ~ 5050 2900
+NoConn ~ 5050 2800
+NoConn ~ 5050 2700
+NoConn ~ 5050 2600
+NoConn ~ 5050 2300
+NoConn ~ 5050 2200
+NoConn ~ 8050 2600
+NoConn ~ 8050 2700
+NoConn ~ 8050 2800
+NoConn ~ 8050 2900
+$EndSCHEMATC

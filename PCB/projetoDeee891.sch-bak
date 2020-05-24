@@ -1,0 +1,432 @@
+EESchema Schematic File Version 4
+LIBS:projetoDeee891-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_POT RV1
+U 1 1 5D926024
+P 4200 2800
+F 0 "RV1" H 4130 2754 50  0000 R CNN
+F 1 "R_POT" H 4130 2845 50  0000 R CNN
+F 2 "footprints:Potentiometer_Sideways" H 4200 2800 50  0001 C CNN
+F 3 "~" H 4200 2800 50  0001 C CNN
+	1    4200 2800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4200 2650 4200 2600
+Wire Wire Line
+	3400 1600 3400 1800
+Wire Wire Line
+	4200 4200 3300 4200
+Wire Wire Line
+	3300 4200 3300 3800
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5D927C08
+P 1850 2550
+F 0 "SW1" V 1804 2698 50  0000 L CNN
+F 1 "SW_Push" V 1895 2698 50  0000 L CNN
+F 2 "footprints:PushButton" H 1850 2750 50  0001 C CNN
+F 3 "~" H 1850 2750 50  0001 C CNN
+	1    1850 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5D928714
+P 1850 2000
+F 0 "R1" H 1920 2046 50  0000 L CNN
+F 1 "10k" H 1920 1955 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 1780 2000 50  0001 C CNN
+F 3 "~" H 1850 2000 50  0001 C CNN
+	1    1850 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1850 1850 1600
+Connection ~ 3400 1600
+Wire Wire Line
+	1850 2150 1850 2250
+Wire Wire Line
+	1850 2750 1850 3000
+Wire Wire Line
+	1850 3800 2150 3800
+NoConn ~ 3300 1800
+NoConn ~ 3100 1800
+NoConn ~ 2700 2200
+NoConn ~ 2700 2300
+NoConn ~ 2700 2900
+NoConn ~ 2700 3000
+NoConn ~ 2700 3100
+NoConn ~ 2700 3200
+NoConn ~ 2700 3300
+NoConn ~ 2700 3400
+NoConn ~ 2700 3500
+NoConn ~ 3700 3500
+NoConn ~ 3700 3400
+NoConn ~ 3700 3300
+NoConn ~ 3700 2300
+NoConn ~ 3700 2200
+$Comp
+L power:GND #PWR0101
+U 1 1 5D92DF3F
+P 2400 3800
+F 0 "#PWR0101" H 2400 3550 50  0001 C CNN
+F 1 "GND" H 2405 3627 50  0000 C CNN
+F 2 "" H 2400 3800 50  0001 C CNN
+F 3 "" H 2400 3800 50  0001 C CNN
+	1    2400 3800
+	1    0    0    -1  
+$EndComp
+Connection ~ 2400 3800
+Wire Wire Line
+	1950 2400 1950 2250
+Wire Wire Line
+	1950 2250 1850 2250
+Connection ~ 1850 2250
+Wire Wire Line
+	1850 2250 1850 2350
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5D92FC3C
+P 2150 3800
+F 0 "#FLG0101" H 2150 3875 50  0001 C CNN
+F 1 "PWR_FLAG" H 2150 3973 50  0000 C CNN
+F 2 "" H 2150 3800 50  0001 C CNN
+F 3 "~" H 2150 3800 50  0001 C CNN
+	1    2150 3800
+	1    0    0    -1  
+$EndComp
+Connection ~ 2150 3800
+Wire Wire Line
+	2150 3800 2300 3800
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5D93281C
+P 1950 2800
+F 0 "SW4" V 1904 2948 50  0000 L CNN
+F 1 "SW_Push" V 1995 2948 50  0000 L CNN
+F 2 "footprints:PushButton" H 1950 3000 50  0001 C CNN
+F 3 "~" H 1950 3000 50  0001 C CNN
+	1    1950 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1950 3000 1850 3000
+Connection ~ 1850 3000
+Wire Wire Line
+	1850 3000 1850 3800
+Wire Wire Line
+	2500 2600 2500 2500
+$Comp
+L Device:R R4
+U 1 1 5D933C0D
+P 2100 2000
+F 0 "R4" H 2170 2046 50  0000 L CNN
+F 1 "10k" H 2170 1955 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 2030 2000 50  0001 C CNN
+F 3 "~" H 2100 2000 50  0001 C CNN
+	1    2100 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1600 2100 1600
+Wire Wire Line
+	1950 2600 2100 2600
+Wire Wire Line
+	2100 2150 2100 2600
+Connection ~ 2100 2600
+Wire Wire Line
+	2100 2600 2500 2600
+Wire Wire Line
+	2100 1850 2100 1600
+Connection ~ 2100 1600
+$Comp
+L Switch:SW_Push SW5
+U 1 1 5D9385EA
+P 2300 2850
+F 0 "SW5" V 2254 2998 50  0000 L CNN
+F 1 "SW_Push" V 2345 2998 50  0000 L CNN
+F 2 "footprints:PushButton" H 2300 3050 50  0001 C CNN
+F 3 "~" H 2300 3050 50  0001 C CNN
+	1    2300 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5D93906A
+P 1400 3400
+F 0 "SW3" H 1400 3685 50  0000 C CNN
+F 1 "SW_Push" H 1400 3594 50  0000 C CNN
+F 2 "footprints:PushButton" H 1400 3600 50  0001 C CNN
+F 3 "~" H 1400 3600 50  0001 C CNN
+	1    1400 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5D9392F5
+P 1000 3950
+F 0 "SW2" V 954 4098 50  0000 L CNN
+F 1 "SW_Push" V 1045 4098 50  0000 L CNN
+F 2 "footprints:PushButton" H 1000 4150 50  0001 C CNN
+F 3 "~" H 1000 4150 50  0001 C CNN
+	1    1000 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5D93D20A
+P 1400 2000
+F 0 "R3" H 1470 2046 50  0000 L CNN
+F 1 "10k" H 1470 1955 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 1330 2000 50  0001 C CNN
+F 3 "~" H 1400 2000 50  0001 C CNN
+	1    1400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5D93DC54
+P 1000 3250
+F 0 "R2" H 1070 3296 50  0000 L CNN
+F 1 "10k" H 1070 3205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 930 3250 50  0001 C CNN
+F 3 "~" H 1000 3250 50  0001 C CNN
+	1    1000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5D93E057
+P 2400 2000
+F 0 "R5" H 2470 2046 50  0000 L CNN
+F 1 "10k" H 2470 1955 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 2330 2000 50  0001 C CNN
+F 3 "~" H 2400 2000 50  0001 C CNN
+	1    2400 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1600 2400 1600
+Wire Wire Line
+	2400 1850 2400 1600
+Connection ~ 2400 1600
+Wire Wire Line
+	2400 1600 3400 1600
+Wire Wire Line
+	2400 2150 2400 2650
+Wire Wire Line
+	2400 2650 2300 2650
+Wire Wire Line
+	2400 2650 2550 2650
+Wire Wire Line
+	2550 2650 2550 2600
+Connection ~ 2400 2650
+Wire Wire Line
+	1400 3200 1400 3100
+Wire Wire Line
+	1400 1850 1400 1600
+Wire Wire Line
+	1400 1600 1850 1600
+Connection ~ 1850 1600
+Wire Wire Line
+	1400 1600 1000 1600
+Connection ~ 1400 1600
+Wire Wire Line
+	1400 3600 1400 3800
+Wire Wire Line
+	1400 3800 1850 3800
+Connection ~ 1850 3800
+Wire Wire Line
+	2300 3050 2300 3800
+Connection ~ 2300 3800
+Wire Wire Line
+	2300 3800 2400 3800
+Wire Wire Line
+	1400 3800 1400 4150
+Wire Wire Line
+	1400 4150 1000 4150
+Connection ~ 1400 3800
+Wire Wire Line
+	1000 3750 1000 3650
+Wire Wire Line
+	1400 3100 2600 3100
+Connection ~ 1400 3100
+Wire Wire Line
+	1400 3100 1400 2150
+Wire Wire Line
+	2650 2800 2700 2800
+Wire Wire Line
+	1950 2400 2700 2400
+Wire Wire Line
+	2650 3650 2650 2800
+Wire Wire Line
+	2700 2700 2600 2700
+Wire Wire Line
+	2550 2600 2700 2600
+Wire Wire Line
+	2500 2500 2700 2500
+Wire Wire Line
+	2600 2700 2600 3100
+$Comp
+L Device:R_POT RV2
+U 1 1 5D96A119
+P 4400 3050
+F 0 "RV2" H 4330 3004 50  0000 R CNN
+F 1 "R_POT" H 4330 3095 50  0000 R CNN
+F 2 "footprints:Potentiometer_Sideways" H 4400 3050 50  0001 C CNN
+F 3 "~" H 4400 3050 50  0001 C CNN
+	1    4400 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_POT RV3
+U 1 1 5D96A9F9
+P 4500 3350
+F 0 "RV3" H 4430 3304 50  0000 R CNN
+F 1 "R_POT" H 4430 3395 50  0000 R CNN
+F 2 "footprints:Potentiometer_Sideways" H 4500 3350 50  0001 C CNN
+F 3 "~" H 4500 3350 50  0001 C CNN
+	1    4500 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_POT RV4
+U 1 1 5D96AFDF
+P 4650 3600
+F 0 "RV4" H 4580 3554 50  0000 R CNN
+F 1 "R_POT" H 4580 3645 50  0000 R CNN
+F 2 "footprints:Potentiometer_Sideways" H 4650 3600 50  0001 C CNN
+F 3 "~" H 4650 3600 50  0001 C CNN
+	1    4650 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_POT RV5
+U 1 1 5D96B6D7
+P 4800 3850
+F 0 "RV5" H 4730 3804 50  0000 R CNN
+F 1 "R_POT" H 4730 3895 50  0000 R CNN
+F 2 "footprints:Potentiometer_Sideways" H 4800 3850 50  0001 C CNN
+F 3 "~" H 4800 3850 50  0001 C CNN
+	1    4800 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4200 2950 4200 3200
+Wire Wire Line
+	4250 3050 3900 3050
+Wire Wire Line
+	3900 3050 3900 2900
+Wire Wire Line
+	4350 3350 3850 3350
+Wire Wire Line
+	3850 3350 3850 3000
+Wire Wire Line
+	4500 3600 3950 3600
+Wire Wire Line
+	3950 3600 3950 3100
+Wire Wire Line
+	4650 3850 4050 3850
+Wire Wire Line
+	4050 3850 4050 3200
+Wire Wire Line
+	4400 2900 4400 2600
+Wire Wire Line
+	4400 2600 4200 2600
+Connection ~ 4200 2600
+Wire Wire Line
+	4200 2600 4200 2500
+Wire Wire Line
+	4500 3200 4500 2500
+Wire Wire Line
+	4500 2500 4200 2500
+Connection ~ 4200 2500
+Wire Wire Line
+	4200 2500 4200 2400
+Wire Wire Line
+	4650 3450 4650 2400
+Wire Wire Line
+	4650 2400 4200 2400
+Connection ~ 4200 2400
+Wire Wire Line
+	4200 2400 4200 2300
+Wire Wire Line
+	4800 3700 4800 2300
+Wire Wire Line
+	4800 2300 4200 2300
+Connection ~ 4200 2300
+Wire Wire Line
+	4200 2300 4200 1600
+Wire Wire Line
+	4500 3500 4200 3500
+Connection ~ 4200 3500
+Wire Wire Line
+	4200 3500 4200 3750
+Wire Wire Line
+	4650 3750 4200 3750
+Connection ~ 4200 3750
+Wire Wire Line
+	4200 3750 4200 4000
+Wire Wire Line
+	4800 4000 4200 4000
+Connection ~ 4200 4000
+Wire Wire Line
+	4200 4000 4200 4200
+Wire Wire Line
+	1000 1600 1000 3100
+Wire Wire Line
+	1000 3650 2650 3650
+Connection ~ 1000 3650
+Wire Wire Line
+	1000 3650 1000 3400
+Wire Wire Line
+	4400 3200 4200 3200
+Connection ~ 4200 3200
+Wire Wire Line
+	4200 3200 4200 3500
+Wire Wire Line
+	4050 3200 3700 3200
+Wire Wire Line
+	3950 3100 3700 3100
+Wire Wire Line
+	3850 3000 3700 3000
+Wire Wire Line
+	3900 2900 3700 2900
+Wire Wire Line
+	4050 2800 3700 2800
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A1
+U 1 1 5D9255E5
+P 3200 2800
+F 0 "A1" H 3200 1711 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 3200 1620 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 3350 1850 50  0001 L CNN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 3200 1800 50  0001 C CNN
+	1    3200 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 3800 3200 3800
+Wire Wire Line
+	4200 1600 3400 1600
+NoConn ~ 3700 2600
+Wire Wire Line
+	3300 3800 3200 3800
+Connection ~ 3300 3800
+Connection ~ 3200 3800
+$EndSCHEMATC
