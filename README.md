@@ -1,0 +1,5 @@
+This is a project to a composition with technological supports subject. The objective was to make an board with an Arduino to capture the data of five potentiometers and push buttons. Then, this data is send through the serial port, using the Open Sound Control protocol to PureData, an interactive programming language made for sound manipulation. The printed circuit board made can be found on the PCB directory, and the arduino firmware on the Firmware directory.
+
+The PureData part was responsible for manipulating five senoidal oscillators. Using the potentiometers, one could change each oscillator's frequency, and with the push buttons turn then on and off. It also capture the input on the computer's soundboard, to apply digital effects (delay and reverb) to the performer's microphone. The PureData code can be found on the PD folder.
+
+The artistic objective of this project was to mimic the sound of buzzers. The performer was a singer, who would sing near the frequencies of the oscillators, making beats, similar to those made by the buzzers.
